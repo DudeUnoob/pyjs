@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+        #ide {
+            width: 50%;
+            height: 50%;
+        }
+
+        .container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.ide, #console {
+  width: 50%;
+}
+
+.ide {
+  border-right: 1px solid #ccc;
+  padding-right: 10px;
+}
+
+#ide {
+    height: 400px;
+    width: 50%;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.py-terminal {
+    width: 50%;
+}
+
+/* textarea {
+  width: 100%;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  /* border: none; */
+
+
+#console textarea {
+  background-color: #000;
+  color: #fff;
+}
+    </style>
+  </head>
+  <body>
+    <py-config>
+        [splashscreen]
+            enabled = false
+    </py-config>
+    <textarea id="ide">print('hello')</textarea>
+
+        </div>
+        <!-- <div  id="console">
+            <textarea></textarea>
+        </div> -->
+    </div>
+    <br />
+    <br />
+    
+    <button type="button" id="run_script">Run</button>
+
+    <script src="script.js">
+
+
+    </script>
+  </body>
+
+</html>
